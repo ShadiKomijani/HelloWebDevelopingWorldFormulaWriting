@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="formula-nevisi.css" />
+  <head></head>
+  <body>
+    <div class="top-of-the-page">
+      <p></p>
+    </div>
+
+    <div class="right-menu">
+      <p></p>
+    </div>
+    <div class="body-of-the-page">
+      <p></p>
+      <div class="decision-box">
+        <button
+          class="decide-button"
+          onclick="
+        decidedType = 1; 
+        typeOne();
+        document.querySelector('.result').innerHTML = '';"
+        >
+          Formula to Parsi
+        </button>
+        <button
+          class="decide-button"
+          onclick="
+        decidedType = 2; 
+        typeTwo(); 
+        document.querySelector('.result').innerHTML = '';"
+        >
+          Parsi to Formula
+        </button>
+      </div>
+      <div>
+        <div class="answer-and-result">
+          <div class="empty">
+            <p>pppppppppppppp</p>
+          </div>
+          <div class="answering-box">
+            <p class="question">یکی از گزینه‌ها رو انتخاب کن :></p>
+            <input
+              placeholder="Type the answer"
+              class="js-your-answer-input input"
+            />
+            <button class="get-answer-button" onclick="getYourAnswer()">
+              Check
+            </button>
+          </div>
+          <div class="result-box">
+            <p class="result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="formula-nevisi.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  margin:0;
+  background-color:rgb(230, 241, 232);
+  color: rgb(4, 58, 37);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  padding-top: 8%;
+}
+
+.decide-button {
+    background-color: rgba(255, 255, 255, 0);
+    color:rgb(4, 58, 37);
+    border-radius: 50%;
+    font-size: 250%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    padding: 20px;
+    border-width: 1px;
+    border-color: rgb(4, 58, 37);
+    cursor: pointer;
+    display: block;
+    margin-top: 2%;
+}
+
+.get-answer-button {
+  background-color:rgba(255, 255, 255, 0);
+  color: rgb(4, 58, 37);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+  border-color: rgb(4, 58, 37);
+  border-width: 1px;
+  border-radius: 25px;
+  font-size: 25px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+  flex: 1;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.question {
+  font-size: 40px;
+  margin: 10px;
+  direction: rtl;
+}
+
+.input {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 1px;
+  border-radius: 25px;
+  border-color:rgb(4, 58, 37);
+  color: rgb(4, 58, 37);
+  margin-right: 10px;
+  text-align: center;
+  flex: 1;
+  direction: rtl;
+}
+
+.input::placeholder {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  color: rgb(4, 58, 37);
+}
+
+.top-of-the-page {
+  align-items: center;
+  direction: center;
+  display: flex;
+  height: 15%;
+  flex: 1;
+  background-color: rgb(199, 236, 224);
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom-style:solid;
+  border-color:rgb(176, 220, 206);
+  border-style: solid;
+  border-width: 1px;
+  position: fixed;
+  top: -1px;
+  width: 100%;
+  max-height: 90px;
+}
+
+.body-of-the-page {
+  position: relative;
+  display:flex
+}
+
+.decision-box {
+  display: inline-block;
+  width: 20%;
+}
+
+.answering-box {
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.right-menu {
+  position: fixed;
+  background-color: rgb(176, 220, 206);
+  height: 100%;
+  right: 0;
+  top: 15%;
+  left: 85%;
+  max-width: 300px;
+}
+
+.decision-box, .answering-box, .result-box {
+  padding-left: 5.5%;
+  position: relative;
+  justify-content: center;
+}
+
+.answer-and-result {
+  flex-direction: row;
+}
+
+.result-box {
+  display: block;
+}
+
+.empty {
+  display: block;
+  font-size: 101%;
+  color: rgba(255, 255, 255, 0);
+}

@@ -38,17 +38,17 @@ function check(yourAnswer) {
   if (decidedType == 1) 
       {if (yourAnswer == answer) 
           {console.log('yay');
-          document.querySelector('.result').innerHTML = "Exellent"}
+          document.querySelector('.result').innerHTML = "✔ Excatly! Exellent✨"}
       else
           {console.log('no', answer);
-          document.querySelector('.result').innerHTML = `No, the answer is ${answer}`}}
+          document.querySelector('.result').innerHTML = `❌Oopsies! No, the answer is ${answer}`}}
   else if (decidedType == 2) 
       {if (yourAnswer == question) 
           {console.log('yay');
-          document.querySelector('.result').innerHTML = "Exellent";}
+          document.querySelector('.result').innerHTML = "✔ Excatly! Exellent✨";}
       else
           {console.log('no', question);
-          document.querySelector('.result').innerHTML = `No, the answer is ${question}`}}}
+          document.querySelector('.result').innerHTML = `❌Oopsies!No, the answer is ${question}`}}}
 
 
 const metalsZarfiat = {
@@ -82,6 +82,10 @@ const zarfiatFelez = String(metalsZarfiat[atomi1[x]][i]);
 const zarfiatNafelez = String(nonmetalsZarfiat[atomi2[y]][1]);
 const esmFelez = metalsName[atomi1[x]];
 const esmNafelez = nonmetalsName[atomi2[y]];
+
+if (felez[0] == 'NH4' & zarfiatNafelez != 1) {
+  felez[0] = '(NH4)'
+}
 const cond = (atomi2[y] == 81 || atomi2[y] == 683 || atomi2[y] == 782 || atomi2[y] == 783 || atomi2[y] == 1584 || atomi2[y] == 1683 || atomi2[y] == 1684);
 
 if (felez[1] == 1)

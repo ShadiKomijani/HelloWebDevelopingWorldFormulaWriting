@@ -66,7 +66,7 @@ const atomi2 = [
   1, 7, 8,  9, 15, 16, 17, 35, 53, 81, 683, 782, 783, 1584, 1683, 1684];
 
 function mainFun() {
-let x = randomNumber(0, atomi1.length - 1);
+let x = randomNumber(0, atomi1.length - 2);
 let y = randomNumber(0, atomi2.length - 1);
 while (x == y) {
   x = randomNumber(0, atomi1.length - 1);
